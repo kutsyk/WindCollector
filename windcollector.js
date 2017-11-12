@@ -25,6 +25,7 @@ function getAndSaveWeather(db) {
         res.on('end', () => {
             try {
                 const parsedData = JSON.parse(rawData);
+                parsedData.timestamp = (new Date()).getTime();
                 insertDocument(db, parsedData, function() {});
                 if (DB === 'test')
                     console.log('inserted');
