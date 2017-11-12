@@ -1,6 +1,6 @@
 const DB = 'analytics';
 // const DB = 'test';
-const COLLECTION = 'wind';
+const COLLECTION = 'weather';
 const INTERVAL = 60000;
 const APIID = 'a803455ed728bd8307680f3668e37cf5';
 
